@@ -50,13 +50,16 @@ df = pd.DataFrame(columns = ['message', 'timestamp', 'latitude','longitude'])
 
 
 # time retreival to build plot
-for i in range(15): # currenlty pulling 90 data points.
+for i in range(90): # currenlty pulling 90 data points.
     time.sleep(60) #pausing 60 seconds between retreivals
     poll = Iss_polling() #polling ISS position
 
     df = df.append(poll.iloc[-1:]) # add new position to plotting dataframe
 
 print (df) #print dataframe to see if all messages are successful.
+
+#save datafile for future reference
+df.to_csv(index=False)
 
 #timestamp to show on plot time when data was made.
 
