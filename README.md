@@ -12,9 +12,9 @@ Code uses open-notify.org API for ISS position Latitude and Longitude data.
 
 The position information is then ploted using Plotly GEO scatter chart
 
-![15 min plot](iss6.png)
+![15 min plot](iss7.png)
 
-Currently set to poll the data every 60 seconds over 15 minutes.
+Currently set to poll the data every 60 seconds over 90 minutes.
 
 The ISS is moving roughly an altude of 400 kilometers above the Earth's surface. It circles the globe at 28,000 km/h, which means it orbits the Earth every 90 minutes. To plot the entire orbit, increase the polling range to 90.
 
